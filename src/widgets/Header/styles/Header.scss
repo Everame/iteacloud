@@ -1,0 +1,12 @@
+$logoSize: calc(var(--index) * 2.5);
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(var(--index) * 5);
+    .logo{
+        height: $logoSize;
+        width: $logoSize;
+        margin-right: var(--shortMargin);
+    }
+}

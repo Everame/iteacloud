@@ -1,0 +1,38 @@
+.outerBlock{
+    width: 100%;
+    height: calc(100vh - var(--index) * 5);
+    display: flex;
+    box-sizing: border-box;
+    padding-top: 15vh;
+    align-items: flex-start;
+    justify-content: center;
+    .innerBlock{
+        width: calc(var(--index) * 15);
+        padding: calc(var(--index) * 2) var(--shortMargin);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        border-radius: calc(var(--index) * 2);
+        border: 1px solid var(--main-color);
+        >div{
+            margin: var(--shortMargin) 0;
+        }
+        .notificationBlock{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            width: 90%;
+            >*{
+                margin: var(--shortMargin) 0;
+            }
+            .title{
+                color: var(--main-color);
+            }
+            .info{
+                width: fit-content;
+            }
+        }
+    }
+}
