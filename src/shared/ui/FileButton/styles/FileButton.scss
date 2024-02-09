@@ -1,0 +1,23 @@
+.fileWrapper{
+    width: 90%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    .typeIcon{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        img{
+            width: 100%;
+        }
+    }
+    .nameBlock{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

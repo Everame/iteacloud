@@ -1,0 +1,12 @@
+.fileViewWrapper{
+    display: grid;
+    gap: 5px;
+    grid-template-rows: repeat(auto-fill, calc(var(--index) * 5));
+    grid-template-columns: repeat(auto-fill, calc(var(--index) * 5));
+    width: 98%;
+    border: 1px solid var(--main-color);
+    border-radius: calc(var(--index) * 0.9);
+    min-height: 100%;
+    box-sizing: border-box;
+    padding: var(--index);
+}

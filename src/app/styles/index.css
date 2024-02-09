@@ -19,4 +19,6 @@ h2{
     --index: calc(1vh + 1vw);
     --shortMargin: calc(var(--index) * 0.3);
     --main-color: #1A73E8;
+    --sub-color: #FB5B8C; /*todo*/
+    --unfocus-color: #8D93A5;
 }
