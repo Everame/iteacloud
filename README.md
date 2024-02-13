@@ -30,11 +30,11 @@
 
 ### В режиме разработчика:
 
-1) Склонировать репозиторий git clone [Everame/iteacloud](https://github.com/Everame/iteacloud.git)https://github.com/Everame/iteacloud.git
-2) Запустить npm i в терминале
-3) Запустить npm start в терминале
+1) Склонировать репозиторий ``` git clone https://github.com/Everame/iteacloud.git ```
+2) Запустить ```npm i``` в терминале
+3) Запустить ```npm start``` в терминале
 
 ### В режиме собранного приложения:
 
 1) Скачать папку build
-2) Запустить файл index.html на сво1м сервере
+2) Запустить файл index.html на своём сервере
