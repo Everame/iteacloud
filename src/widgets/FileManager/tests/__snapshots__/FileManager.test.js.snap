@@ -1,0 +1,492 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FileManager FileManager is render 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <section
+        class="fileManagerWrapper"
+      >
+        <div
+          class="actionWrapper"
+        >
+          <a
+            class="actionBtn show"
+            data-testid="action"
+            id=""
+          >
+            <div
+              class="iconBlock"
+            >
+              <img
+                alt="Button icon"
+                src="folder-add.svg"
+              />
+            </div>
+            <div
+              class="textBlock"
+            >
+              <span
+                class="title"
+              >
+                Создать папку
+              </span>
+            </div>
+          </a>
+          <a
+            class="actionBtn show"
+            data-testid="action"
+            id=""
+          >
+            <div
+              class="iconBlock"
+            >
+              <img
+                alt="Button icon"
+                src="upload.svg"
+              />
+            </div>
+            <div
+              class="textBlock"
+            >
+              <span
+                class="title"
+              >
+                Загрузить файл
+              </span>
+            </div>
+          </a>
+          <a
+            class="actionBtn "
+            data-testid="action"
+            id="download"
+          >
+            <div
+              class="iconBlock"
+            >
+              <img
+                alt="Button icon"
+                src="download.svg"
+              />
+            </div>
+            <div
+              class="textBlock"
+            >
+              <span
+                class="title"
+              >
+                Скачать файл
+              </span>
+            </div>
+          </a>
+          <a
+            class="actionBtn "
+            data-testid="action"
+            id=""
+          >
+            <div
+              class="iconBlock"
+            >
+              <img
+                alt="Button icon"
+                src="rename.svg"
+              />
+            </div>
+            <div
+              class="textBlock"
+            >
+              <span
+                class="title"
+              >
+                Переименовать файл
+              </span>
+            </div>
+          </a>
+          <a
+            class="actionBtn "
+            data-testid="action"
+            id=""
+          >
+            <div
+              class="iconBlock"
+            >
+              <img
+                alt="Button icon"
+                src="delete.svg"
+              />
+            </div>
+            <div
+              class="textBlock"
+            >
+              <span
+                class="title"
+              >
+                Удалить файл
+              </span>
+            </div>
+          </a>
+          <div
+            class="modalWrapper "
+            data-testid="modalAction"
+          >
+            <div
+              class="inputWrapper"
+            >
+              <div
+                class="inputLabel"
+              >
+                Новое наименование:
+              </div>
+              <input
+                placeholder="Новый файл"
+                type="text"
+                value=""
+              />
+            </div>
+            <div
+              class="confirmBtn "
+            >
+              <span
+                class="btnText"
+              >
+                Переименовать файл
+              </span>
+            </div>
+            <div
+              class="closeBtn"
+            >
+              <img
+                alt="Close Icon"
+                src="close.svg"
+              />
+            </div>
+          </div>
+          <div
+            class="darkLayout "
+          />
+        </div>
+        <div
+          class="fileViewWrapper"
+        >
+          <div
+            class="filesBlock"
+            data-testid="files"
+          />
+          <div
+            class="btnWrapper "
+            data-testid="backBtn"
+          >
+            <img
+              alt="Back button"
+              src="angle-left.svg"
+            />
+          </div>
+          <div
+            class="sizeWrapper"
+          >
+            <div
+              class="valuesRow"
+            >
+              <div
+                class="value"
+              >
+                <h4>
+                  0.000
+                  mb
+                </h4>
+              </div>
+              <div
+                class="value"
+              >
+                <h4>
+                  3.75
+                  mb
+                </h4>
+              </div>
+            </div>
+            <div
+              class="progressBar"
+            >
+              <div
+                class="innerRow"
+                style="width: 0%;"
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          class="toastWrapper "
+        />
+      </section>
+    </div>
+  </body>,
+  "container": <div>
+    <section
+      class="fileManagerWrapper"
+    >
+      <div
+        class="actionWrapper"
+      >
+        <a
+          class="actionBtn show"
+          data-testid="action"
+          id=""
+        >
+          <div
+            class="iconBlock"
+          >
+            <img
+              alt="Button icon"
+              src="folder-add.svg"
+            />
+          </div>
+          <div
+            class="textBlock"
+          >
+            <span
+              class="title"
+            >
+              Создать папку
+            </span>
+          </div>
+        </a>
+        <a
+          class="actionBtn show"
+          data-testid="action"
+          id=""
+        >
+          <div
+            class="iconBlock"
+          >
+            <img
+              alt="Button icon"
+              src="upload.svg"
+            />
+          </div>
+          <div
+            class="textBlock"
+          >
+            <span
+              class="title"
+            >
+              Загрузить файл
+            </span>
+          </div>
+        </a>
+        <a
+          class="actionBtn "
+          data-testid="action"
+          id="download"
+        >
+          <div
+            class="iconBlock"
+          >
+            <img
+              alt="Button icon"
+              src="download.svg"
+            />
+          </div>
+          <div
+            class="textBlock"
+          >
+            <span
+              class="title"
+            >
+              Скачать файл
+            </span>
+          </div>
+        </a>
+        <a
+          class="actionBtn "
+          data-testid="action"
+          id=""
+        >
+          <div
+            class="iconBlock"
+          >
+            <img
+              alt="Button icon"
+              src="rename.svg"
+            />
+          </div>
+          <div
+            class="textBlock"
+          >
+            <span
+              class="title"
+            >
+              Переименовать файл
+            </span>
+          </div>
+        </a>
+        <a
+          class="actionBtn "
+          data-testid="action"
+          id=""
+        >
+          <div
+            class="iconBlock"
+          >
+            <img
+              alt="Button icon"
+              src="delete.svg"
+            />
+          </div>
+          <div
+            class="textBlock"
+          >
+            <span
+              class="title"
+            >
+              Удалить файл
+            </span>
+          </div>
+        </a>
+        <div
+          class="modalWrapper "
+          data-testid="modalAction"
+        >
+          <div
+            class="inputWrapper"
+          >
+            <div
+              class="inputLabel"
+            >
+              Новое наименование:
+            </div>
+            <input
+              placeholder="Новый файл"
+              type="text"
+              value=""
+            />
+          </div>
+          <div
+            class="confirmBtn "
+          >
+            <span
+              class="btnText"
+            >
+              Переименовать файл
+            </span>
+          </div>
+          <div
+            class="closeBtn"
+          >
+            <img
+              alt="Close Icon"
+              src="close.svg"
+            />
+          </div>
+        </div>
+        <div
+          class="darkLayout "
+        />
+      </div>
+      <div
+        class="fileViewWrapper"
+      >
+        <div
+          class="filesBlock"
+          data-testid="files"
+        />
+        <div
+          class="btnWrapper "
+          data-testid="backBtn"
+        >
+          <img
+            alt="Back button"
+            src="angle-left.svg"
+          />
+        </div>
+        <div
+          class="sizeWrapper"
+        >
+          <div
+            class="valuesRow"
+          >
+            <div
+              class="value"
+            >
+              <h4>
+                0.000
+                mb
+              </h4>
+            </div>
+            <div
+              class="value"
+            >
+              <h4>
+                3.75
+                mb
+              </h4>
+            </div>
+          </div>
+          <div
+            class="progressBar"
+          >
+            <div
+              class="innerRow"
+              style="width: 0%;"
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        class="toastWrapper "
+      />
+    </section>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

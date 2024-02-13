@@ -1,11 +1,16 @@
 .fileWrapper{
-    width: 90%;
-    height: 90%;
+    width: calc(var(--index) * 4);
+    height: fit-content;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    padding: var(--shortMargin);
+    &.select{
+        border-radius: var(--shortMargin);
+        border: 1px solid var(--main-color);
+    }
     .typeIcon{
         display: flex;
         align-items: center;
@@ -19,5 +24,11 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        width: 100%;
+        .title{
+            width: 100%;
+            text-align: center;
+            word-wrap: break-word;
+        }
     }
 }

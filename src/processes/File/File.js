@@ -1,10 +1,8 @@
-import React from "react"
-
 export default class File{
 
-    constructor(type, body, size, name){
+    constructor(type, url, size, name){
         this.type = type;
-        this.body = body;
+        this.url = url;
         this.size = size;
         this.name = name;
     }

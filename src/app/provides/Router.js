@@ -3,6 +3,7 @@ import { Navigate, createBrowserRouter } from "react-router-dom";
 import AuthPage from "../../pages/AuthPage/AuthPage";
 import RequireAuth from "../api/AuthRouter";
 import Homepage from "../../pages/Homepage/Homepage";
+import NotFound from "../../pages/404/404";
 
 export const Router = createBrowserRouter([
     {
@@ -15,7 +16,7 @@ export const Router = createBrowserRouter([
     },
     {
         path: '/404',
-        element: <div>404</div>
+        element: <NotFound/>
     },
     {
         path: '*',

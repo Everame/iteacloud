@@ -1,18 +1,80 @@
+@media all and (max-width: 1024px) {
+    .actionWrapper{
+        .actionBtn{
+            width: fit-content !important;
+            .iconBlock{
+                width: 13% !important;
+                margin-right: var(--shortMargin);
+            }
+            .textBlock{
+                width: 87% !important;
+                .title{
+                    line-height: 20px;
+                    font-size: calc(var(--index) * 0.6) !important;
+                }
+            }
+        }
+    }
+}
+@media all and (max-width: 480px) {
+    .actionWrapper{
+        height: calc(var(--index) * 2) !important;
+        .actionBtn{
+            width: fit-content !important;
+            .iconBlock{
+                width: 10% !important;
+                margin-right: var(--shortMargin);
+            }
+            .textBlock{
+                width: 90% !important;
+                .title{
+                    font-size: calc(var(--index) * 0.6) !important;
+                }
+            }
+        }
+    }
+}
+@media all and (max-width: 415px) {
+    .actionWrapper{
+        .actionBtn{
+            .textBlock{
+                .title{
+                    font-size: calc(var(--index) * 0.5) !important;
+                }
+            }
+        }
+    }
+}
+
 .actionWrapper{
     display: flex;
     align-items: center;
     justify-content: flex-start;
     width: 98%;
-    height: calc(var(--index) * 20);
+    height: calc(var(--index) * 2);
     border: 1px solid var(--main-color);
     border-radius: calc(var(--index) * 0.6);
     margin-bottom: var(--shortMargin);
     box-sizing: border-box;
     padding: 0 var(--shortMargin);
+    .darkLayout{
+        background-color: var(--grey-transparent);
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        content: "";
+        top: 0;
+        left: 0;
+        z-index: 5;
+        display: none;
+        &.show{
+            display: block;
+        }
+    }
     .actionBtn{
-        display: flex;
+        display: none;
         align-items: center;
-        width: 15%;
+        width: 17%;
         height: 70%;
         border-radius: var(--shortMargin);
         background-color: var(--unfocus-color);
@@ -21,6 +83,10 @@
         margin-right: calc(var(--index) * 0.6);
         cursor: pointer;
         transition: all 0.4s ease;
+        text-decoration: none;
+        &.show{
+            display: flex;
+        }
         .iconBlock{
             width: 20%;
             height: 100%;

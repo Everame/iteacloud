@@ -1,0 +1,93 @@
+$modalHeight: calc(var(--index) * 5);
+$modalWidth: calc(var(--index) * 15);
+$closeSize: calc(var(--index) * 1.7);
+.modalWrapper{
+    position: fixed;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    padding: calc(var(--index) * 2) calc(var(--index) * 0.5);
+    width: $modalWidth;
+    min-height: $modalHeight;
+    left: calc(50% - $modalWidth/2);
+    top: calc(30% - $modalHeight/2);
+    border-radius: var(--shortMargin);
+    border: 1px solid var(--main-color);
+    z-index: 10;
+    background-color: #fff;
+    &.show{
+        display: flex;
+    }
+    .inputWrapper{
+        width: 90%;
+        .inputLabel{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: calc(var(--index) * 0.7);
+            padding-bottom: var(--shortMargin);
+        }
+        input{
+            border-radius: var(--shortMargin);
+            border: 1px solid var(--unfocus-color);
+            font-size: calc(var(--index) * 0.6);
+            padding: calc(var(--shortMargin) * 2) var(--shortMargin);
+            width: 100%;
+            box-sizing: border-box;
+            &::placeholder{
+                color: var(--unfocus-color);
+            }
+            &:focus{
+                border: 1px solid var(--sub-color);
+            }
+        }
+    }
+    .confirmBtn{
+        padding: calc(var(--index) * 0.7) calc(var(--index) * 0.5);
+        margin-top: calc(var(--shortMargin) * 2);
+        background-color: #34A853;
+        border-radius: var(--shortMargin);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: all ease 0.4s;
+        &.disable{
+            opacity: 0.5;
+            cursor: no-drop;
+            &:hover{
+                transform: none;
+            }
+        }
+        &:hover{
+            transform: scale(1.05);
+        }
+        .btnText{
+            color: #fff;
+            font-size: calc(var(--index) * 0.6);
+        }
+    }
+    .closeBtn{
+        width: $closeSize;
+        height: $closeSize;
+        border-radius: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        position: absolute;
+        right: calc(var(--index) * -0.8);
+        top: calc(var(--index) * -0.8);
+        background-color: var(--grey-transparent);
+        transition: all ease 0.4s;
+        &:hover{
+            transform: scale(1.05);
+        }
+        img{
+            height: 70%;
+            width: 70%;
+        }
+    }
+}

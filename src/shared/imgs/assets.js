@@ -8,6 +8,8 @@ import Upload from "./upload.svg";
 import Donwload from "./download.svg";
 import Rename from "./rename.svg";
 import Delete from "./delete.svg";
+import Close from "./close.svg";
+import AngleLeft from './angle-left.svg';
 
 export {
     CloudIcon,
@@ -19,5 +21,7 @@ export {
     Upload,
     Donwload,
     Rename,
-    Delete
+    Delete,
+    Close,
+    AngleLeft
 }
