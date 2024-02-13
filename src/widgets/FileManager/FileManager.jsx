@@ -10,16 +10,18 @@ export default function FileManager() {
   const [currentIndex, setCurrentIndex] = useState(-2);
   const [toast, setToast] = useState();
   const [isFolder, setIsFolder] = useState(false);
-  const fileExec = new FileExecutor();
-  const [storage, setStorage] = useState(fileExec.readDir());
+  const FileExec = new FileExecutor();
+  FileExec.init();
+  const [storage, setStorage] = useState(FileExec.readDir());
+
   function openFolder(){
     setFolderIndex(currentIndex);
     setCurrentIndex(-1);
-    setStorage(fileExec.readDir(currentIndex));
+    setStorage(FileExec.readDir(currentIndex));
   }
   function returnToRoot(){
     setFolderIndex(-1);
-    setStorage(fileExec.readDir());
+    setStorage(FileExec.readDir());
   }
   return (
     <section className="fileManagerWrapper">

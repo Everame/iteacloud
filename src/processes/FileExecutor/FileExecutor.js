@@ -2,8 +2,11 @@ import Folder from "../Folder/Folder";
 
 export default class FileExecutor{
 
-    reset(){
-        localStorage.setItem('storage', JSON.stringify([]));
+    init(){
+        if(!localStorage.getItem('storage')){
+            localStorage.setItem('storage', JSON.stringify([]));
+            return true;
+        }
     }
 
     readDir(index){
