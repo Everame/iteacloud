@@ -8,18 +8,18 @@ import Toast from '../../widgets/ToastWrapper/api/Toast/Toast';
 export default function ActionModal({type, show, setShow, setType, setStorage, folder, index, setToast }) {
     const [name, setName] = useState("");
     const [uploadFile, setUploadFile] = useState({});
-    const fe = new FileExecutor();
+    const FileExec = new FileExecutor();
     const toast = new Toast();
     function reset(){
         setShow(false); 
         setType("");
     }
     function create(){
-        const result = fe.createFolder(name); 
+        const result = FileExec.createFolder(name); 
         if(result){
             setToast(toast.setSuccess("Папка успешно создана"));
             reset(); 
-            setStorage(fe.readDir());
+            setStorage(FileExec.readDir());
         }else{
             setToast(toast.setFail("Папка не была создана"));
         }
@@ -41,13 +41,13 @@ export default function ActionModal({type, show, setShow, setType, setStorage, f
     function upload(file){
         let result;
         if(index === -2){
-            result = fe.uploadFile(file);
+            result = FileExec.uploadFile(file);
             reset();
-            setStorage(fe.readDir());
+            setStorage(FileExec.readDir());
         }else{
-            result = fe.uploadFile(file, folder);
+            result = FileExec.uploadFile(file, folder);
             reset();
-            setStorage(fe.readDir(folder));
+            setStorage(FileExec.readDir(folder));
         }
         if(result){
             setToast(toast.setSuccess("Файл успешно загружен"));
@@ -58,13 +58,13 @@ export default function ActionModal({type, show, setShow, setType, setStorage, f
     function rename(){
         let result;
         if(folder === -1){
-            result = fe.renameFile(index, name);
+            result = FileExec.renameFile(index, name);
             reset();
-            setStorage(fe.readDir());
+            setStorage(FileExec.readDir());
         }else{
-            result = fe.renameFile(index, name, folder);
+            result = FileExec.renameFile(index, name, folder);
             reset();
-            setStorage(fe.readDir(folder));
+            setStorage(FileExec.readDir(folder));
         }
         if(result){
             setToast(toast.setSuccess("Файл успешно переименован"));
