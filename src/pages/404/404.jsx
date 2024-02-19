@@ -7,7 +7,7 @@ export default function NotFound() {
             <div className="info">
                 <h1 className="error">404</h1>
                 <div className="description">
-                    <h4>Oh you &apos ve gone beyond the cloud</h4>
+                    <h4>Oh you {'&apos'} ve gone beyond the cloud</h4>
                 </div>
             </div>
         </div>
