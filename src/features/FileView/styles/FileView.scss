@@ -1,6 +1,6 @@
 $btnSize: calc(var(--index) * 1.5);
 
-.fileViewWrapper{
+.fileViewWrapper {
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
@@ -13,9 +13,9 @@ $btnSize: calc(var(--index) * 1.5);
     position: relative;
     &::-webkit-scrollbar {
         width: 5px;
-        height:7px;
+        height: 7px;
     }
-    .filesBlock{
+    .filesBlock {
         display: flex;
         flex-wrap: wrap;
         align-items: flex-start;
@@ -24,7 +24,7 @@ $btnSize: calc(var(--index) * 1.5);
         padding-bottom: 40px;
         position: relative;
     }
-    .btnWrapper{
+    .btnWrapper {
         display: none;
         height: $btnSize;
         width: $btnSize;
@@ -37,13 +37,13 @@ $btnSize: calc(var(--index) * 1.5);
         align-items: center;
         justify-content: center;
         cursor: pointer;
-        &.show{
+        &.show {
             display: flex;
         }
-        &:hover{
+        &:hover {
             transform: scale(1.05);
         }
-        img{
+        img {
             height: 100%;
             width: 100%;
         }

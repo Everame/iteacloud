@@ -1,38 +1,38 @@
 @media all and (max-width: 1440px) {
-    .fullSizeLayer{
-        .info{
+    .fullSizeLayer {
+        .info {
             width: 60% !important;
             bottom: 35% !important;
-            left: calc(53% - 60%/2) !important;
+            left: calc(53% - 60% / 2) !important;
         }
     }
 }
 @media all and (max-width: 1024px) {
-    .fullSizeLayer{
-        .info{
+    .fullSizeLayer {
+        .info {
             width: 70% !important;
             bottom: 35% !important;
-            left: calc(50% - 70%/2) !important;
+            left: calc(50% - 70% / 2) !important;
         }
     }
 }
 @media all and (max-width: 768px) {
-    .fullSizeLayer{
-        .info{
+    .fullSizeLayer {
+        .info {
             width: 80% !important;
             bottom: 35% !important;
-            left: calc(50% - 80%/2) !important;
-            .error{
+            left: calc(50% - 80% / 2) !important;
+            .error {
                 font-size: calc(var(--index) * 10);
                 color: #fff;
                 line-height: calc(var(--index) * 9);
             }
-            .description{
+            .description {
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 width: 100%;
-                h4{
+                h4 {
                     font-size: calc(var(--index) * 3);
                     color: #fff;
                     text-align: center;
@@ -42,13 +42,13 @@
     }
 }
 
-.fullSizeLayer{
+.fullSizeLayer {
     position: fixed;
     height: 100%;
     width: 100%;
-    background-image: url("../../../shared/imgs/clouds-bg.jpg");
+    background-image: url('../../../shared/imgs/clouds-bg.jpg');
     background-size: cover;
-    .info{
+    .info {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -56,18 +56,18 @@
         position: absolute;
         width: 50%;
         bottom: 30%;
-        left: calc(50% - 50%/2);
-        .error{
+        left: calc(50% - 50% / 2);
+        .error {
             font-size: calc(var(--index) * 10);
             color: #fff;
             line-height: calc(var(--index) * 9);
         }
-        .description{
+        .description {
             display: flex;
             align-items: center;
             justify-content: center;
             width: 100%;
-            h4{
+            h4 {
                 font-size: calc(var(--index) * 3);
                 color: #fff;
                 text-align: center;

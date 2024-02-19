@@ -1,7 +1,7 @@
 $modalHeight: calc(var(--index) * 5);
 $modalWidth: calc(var(--index) * 15);
 $closeSize: calc(var(--index) * 1.7);
-.modalWrapper{
+.modalWrapper {
     position: fixed;
     display: none;
     flex-direction: column;
@@ -17,59 +17,59 @@ $closeSize: calc(var(--index) * 1.7);
     border: 1px solid var(--main-color);
     z-index: 10;
     background-color: #fff;
-    &.show{
+    &.show {
         display: flex;
     }
-    .inputWrapper{
+    .inputWrapper {
         width: 90%;
-        .inputLabel{
+        .inputLabel {
             display: flex;
             align-items: center;
             justify-content: space-between;
             font-size: calc(var(--index) * 0.7);
             padding-bottom: var(--shortMargin);
         }
-        input{
+        input {
             border-radius: var(--shortMargin);
             border: 1px solid var(--unfocus-color);
             font-size: calc(var(--index) * 0.6);
             padding: calc(var(--shortMargin) * 2) var(--shortMargin);
             width: 100%;
             box-sizing: border-box;
-            &::placeholder{
+            &::placeholder {
                 color: var(--unfocus-color);
             }
-            &:focus{
+            &:focus {
                 border: 1px solid var(--sub-color);
             }
         }
     }
-    .confirmBtn{
+    .confirmBtn {
         padding: calc(var(--index) * 0.7) calc(var(--index) * 0.5);
         margin-top: calc(var(--shortMargin) * 2);
-        background-color: #34A853;
+        background-color: #34a853;
         border-radius: var(--shortMargin);
         display: flex;
         align-items: center;
         justify-content: center;
         cursor: pointer;
         transition: all ease 0.4s;
-        &.disable{
+        &.disable {
             opacity: 0.5;
             cursor: no-drop;
-            &:hover{
+            &:hover {
                 transform: none;
             }
         }
-        &:hover{
+        &:hover {
             transform: scale(1.05);
         }
-        .btnText{
+        .btnText {
             color: #fff;
             font-size: calc(var(--index) * 0.6);
         }
     }
-    .closeBtn{
+    .closeBtn {
         width: $closeSize;
         height: $closeSize;
         border-radius: 100%;
@@ -82,10 +82,10 @@ $closeSize: calc(var(--index) * 1.7);
         top: calc(var(--index) * -0.8);
         background-color: var(--grey-transparent);
         transition: all ease 0.4s;
-        &:hover{
+        &:hover {
             transform: scale(1.05);
         }
-        img{
+        img {
             height: 70%;
             width: 70%;
         }

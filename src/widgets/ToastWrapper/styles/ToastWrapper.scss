@@ -1,19 +1,19 @@
 @media all and (max-width: 1024px) {
-    .toastWrapper{
+    .toastWrapper {
         width: 45% !important;
     }
 }
 @media all and (max-width: 480px) {
-    .toastWrapper{
+    .toastWrapper {
         width: 50% !important;
     }
 }
 @media all and (max-width: 415px) {
-    .toastWrapper{
+    .toastWrapper {
         width: 60% !important;
     }
 }
-.toastWrapper{
+.toastWrapper {
     position: fixed;
     top: 0;
     right: 0;
@@ -22,10 +22,10 @@
     display: none;
     align-items: flex-end;
     justify-content: flex-end;
-    &.show{
+    &.show {
         display: flex;
     }
-    div{
+    div {
         padding: calc(var(--index) * 1) calc(var(--index) * 2);
         border-radius: var(--shortMargin);
         display: flex;
@@ -37,15 +37,15 @@
         animation: wave 3s forwards;
         opacity: 0;
     }
-    .successToast{
+    .successToast {
         border: 2px solid var(--green);
-        .text{
+        .text {
             color: var(--green);
         }
     }
-    .failToast{
+    .failToast {
         border: 2px solid var(--red);
-        .text{
+        .text {
             color: var(--red);
         }
     }

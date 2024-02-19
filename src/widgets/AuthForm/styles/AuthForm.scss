@@ -1,11 +1,11 @@
 @media all and (max-width: 425px) {
-    .outerBlock{
-        .innerBlock{
+    .outerBlock {
+        .innerBlock {
             width: calc(var(--index) * 25) !important;
         }
     }
 }
-.outerBlock{
+.outerBlock {
     width: 100%;
     height: calc(100vh - var(--index) * 5);
     display: flex;
@@ -13,7 +13,7 @@
     padding-top: 15vh;
     align-items: flex-start;
     justify-content: center;
-    .innerBlock{
+    .innerBlock {
         width: calc(var(--index) * 15);
         padding: calc(var(--index) * 2) var(--shortMargin);
         display: flex;
@@ -22,22 +22,22 @@
         justify-content: flex-start;
         border-radius: calc(var(--index) * 2);
         border: 1px solid var(--main-color);
-        >div{
+        > div {
             margin: var(--shortMargin) 0;
         }
-        .notificationBlock{
+        .notificationBlock {
             display: flex;
             align-items: center;
             justify-content: center;
             flex-direction: column;
             width: 90%;
-            >*{
+            > * {
                 margin: var(--shortMargin) 0;
             }
-            .title{
+            .title {
                 color: var(--main-color);
             }
-            .info{
+            .info {
                 text-align: center;
                 width: fit-content;
             }

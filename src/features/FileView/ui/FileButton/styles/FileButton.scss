@@ -1,4 +1,4 @@
-.fileWrapper{
+.fileWrapper {
     width: calc(var(--index) * 4);
     height: fit-content;
     display: flex;
@@ -7,25 +7,25 @@
     justify-content: center;
     cursor: pointer;
     padding: var(--shortMargin);
-    &.select{
+    &.select {
         border-radius: var(--shortMargin);
         border: 1px solid var(--main-color);
     }
-    .typeIcon{
+    .typeIcon {
         display: flex;
         align-items: center;
         justify-content: center;
         width: 100%;
-        img{
+        img {
             width: 100%;
         }
     }
-    .nameBlock{
+    .nameBlock {
         display: flex;
         align-items: center;
         justify-content: center;
         width: 100%;
-        .title{
+        .title {
             width: 100%;
             text-align: center;
             word-wrap: break-word;
