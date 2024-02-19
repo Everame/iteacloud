@@ -5,7 +5,6 @@ import { useNavigate } from 'react-router'
 
 export default function AuthForm() {
     const navigate = useNavigate()
-    console.log(process.env.REACT_APP_CLIENT_ID)
     return (
         <div className="outerBlock">
             <div className="innerBlock">
