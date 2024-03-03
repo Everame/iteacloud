@@ -7,6 +7,10 @@ export default {
                 'color-info': '#A0AEC0',
                 'color-border': '#E2E8F0',
                 'color-grey800': '#2D3748',
+                'color-grey600': '#718096',
+            },
+            boxShadow: {
+                sm: '0px 3px 8px -1px rgba(50, 50, 71, 0.05),0px 0px 1px 0px rgba(12, 26, 75, 0.24)',
             },
         },
         fontFamily: {
