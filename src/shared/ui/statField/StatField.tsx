@@ -1,5 +1,5 @@
+import { SharedTheme } from '@/shared/libs/sharedTheme/SharedTheme'
 import { Flex, Typography } from 'antd'
-import { SharedTheme } from '../../libs/sharedTheme/SharedTheme'
 
 type Props = {
     title: string
