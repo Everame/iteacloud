@@ -5,6 +5,7 @@ module.exports = {
     "eslint:recommended",
     "plugin:eslint-plugin/recommended",
     "airbnb-base",
+    "plugin:storybook/recommended"
   ],
   parserOptions: {
     ecmaVersion: "latest",
