@@ -13,6 +13,12 @@ export const SharedTheme = (props: React.PropsWithChildren<MyProps>) => {
                     Typography: {
                         titleMarginBottom: 0,
                     },
+                    Button: {
+                        contentLineHeight: 0,
+                        fontWeight: 500,
+                        defaultHoverBg: '#0066FF',
+                        defaultHoverColor: 'none',
+                    },
                     Input: {
                         inputFontSize: 16,
                         activeBorderColor: '#E2E8F0',
