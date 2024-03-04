@@ -7,8 +7,10 @@
         "skipLibCheck": true,
         "allowJs": true,
         "baseUrl": ".",
+        "typeRoots": ["./src/vite-env.d.ts", "./node_modules/@types"],
         "paths": {
-            "@/*": ["src/*"]
+            "@/*": ["src/*"],
+            "#/*": ["public/*"]
         },
 
         /* Bundler mode */

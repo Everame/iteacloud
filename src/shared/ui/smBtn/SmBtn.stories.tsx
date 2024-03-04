@@ -1,13 +1,14 @@
 import { Meta, Story } from '@storybook/react'
-import SmAddBtn from './SmAddBtn'
+import SmBtn from './SmBtn'
 
 export default {
-    title: 'SmAddBtn',
-    component: SmAddBtn,
+    title: 'SmBtn',
+    component: SmBtn,
 } as Meta
 
-const Template: Story = (args: any) => <SmAddBtn {...args} />
+const Template: Story = (args: any) => <SmBtn {...args} />
 export const Default = Template.bind({})
 Default.args = {
     title: 'Добавить участок',
+    click: () => {},
 }

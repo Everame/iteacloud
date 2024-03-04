@@ -16,8 +16,8 @@ export const SharedTheme = (props: React.PropsWithChildren<MyProps>) => {
                     Button: {
                         contentLineHeight: 0,
                         fontWeight: 500,
-                        defaultHoverBg: '#0066FF',
                         defaultHoverColor: 'none',
+                        defaultShadow: 'none',
                     },
                     Input: {
                         inputFontSize: 16,
