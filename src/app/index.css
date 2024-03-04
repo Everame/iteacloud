@@ -20,6 +20,15 @@
         format('truetype');
 }
 
+.ant-upload-drag {
+    border: 1px dashed #cbd5e0 !important;
+    border-radius: 4px !important;
+}
+
+.ant-upload-drag:hover {
+    border: 1px dashed #cbd5e0 !important;
+}
+
 html,
 body,
 div,
