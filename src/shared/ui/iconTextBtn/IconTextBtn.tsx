@@ -4,7 +4,7 @@ import { Button } from 'antd'
 type Props = {
     title: string
     icon: React.FunctionComponent
-    click: () => any
+    click: () => void
 }
 
 const IconTextBtn = (props: Props) => {
@@ -16,7 +16,7 @@ const IconTextBtn = (props: Props) => {
             <Button
                 onClick={click}
                 icon={<Icon />}
-                className="font-inter p-[16px] bg-color-secondary text-color-accent text-[14px] rounded-[8px] border-none hover:!bg-color-secondary box-content min-w-[260px] h-[8px] "
+                className="font-inter p-4 bg-color-secondary text-color-accent text-s6 rounded-lg border-none hover:!bg-color-secondary box-content min-w-[260px] h-2 "
             >
                 {title}
             </Button>

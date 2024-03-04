@@ -1,5 +1,5 @@
-import { SharedTheme } from '@/shared/libs/sharedTheme/SharedTheme'
 import UploadIcon from '#/icons/upload.svg?react'
+import { SharedTheme } from '@/shared/libs/sharedTheme/SharedTheme'
 import type { UploadProps } from 'antd'
 import { message, Upload } from 'antd'
 

@@ -1,5 +1,5 @@
-import { useState } from 'react'
 import { Flex, Input, Typography } from 'antd'
+import { useState } from 'react'
 import { SharedTheme } from '../../libs/sharedTheme/SharedTheme'
 
 type Props = {
@@ -29,7 +29,7 @@ export const TextField = (props: Props) => {
                         placeholder={placeholder}
                         onChange={handleValueChange}
                         value={value}
-                        className="font-inter py-[14px] px-[18px] border-color-border border rounded-[8px] text-color-grey800 leading-[19px] max-w-[600px] font-normal"
+                        className="font-inter py-[14px] px-[18px] border-color-border border rounded-[8px] text-color-grey800 leading-[19px] h-12 max-w-[600px] font-normal"
                     />
                 </div>
             </Flex>
