@@ -7,8 +7,20 @@ export default {
 } as Meta
 
 const Template: StoryFn = (args: any) => <SmBtn {...args} />
-export const Default = Template.bind({})
-Default.args = {
+export const AddSite = Template.bind({})
+AddSite.args = {
     title: 'Добавить участок',
+    click: () => {},
+}
+
+export const MoreDetails = Template.bind({})
+MoreDetails.args = {
+    title: 'Подробнее',
+    click: () => {},
+}
+
+export const SaveField = Template.bind({})
+SaveField.args = {
+    title: 'Сохранить поле',
     click: () => {},
 }

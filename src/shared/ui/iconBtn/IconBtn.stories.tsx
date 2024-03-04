@@ -9,10 +9,19 @@ export default {
 } as Meta
 
 const Template: StoryFn = (args: any) => <IconBtn {...args} />
-export const Default = Template.bind({})
-Default.args = {
+export const Gear = Template.bind({})
+Gear.args = {
     variant: 'blue',
-    icon: GearIcon || BackIcon,
+    icon: GearIcon,
+    click: () => {
+        console.log('dd')
+    },
+}
+
+export const Back = Template.bind({})
+Back.args = {
+    variant: 'gary',
+    icon: BackIcon,
     click: () => {
         console.log('dd')
     },
