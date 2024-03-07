@@ -16,6 +16,7 @@ export default {
                 'color-success': '#66CB9F',
                 'color-error': '#F16063',
                 'color-warning': '#FFD363',
+                'color-pressSecondary': '#76ACFB',
             },
             boxShadow: {
                 sm: '0px 3px 8px -1px rgba(50, 50, 71, 0.05),0px 0px 1px 0px rgba(12, 26, 75, 0.24)',
