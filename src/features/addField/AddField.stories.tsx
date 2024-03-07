@@ -9,5 +9,5 @@ export default {
 const Template: StoryFn = (args: any) => <AddField {...args} />
 export const Default = Template.bind({})
 Default.args = {
-    click: () => {},
+    onClick: () => {},
 }

@@ -1,17 +1,18 @@
 import UploadIcon from '#/icons/upload.svg?react'
 import { Message } from '@/shared/lib/Message/Message'
 import Dragger from '@/shared/ui/Dragger/Dragger'
+import Flex from '@/shared/ui/Flex/Flex'
+import Paragraph from '@/shared/ui/Paragraph/Paragraph'
 
 import { UploadProps } from 'antd'
 
-type Props = {
-    name: string
-    action: string
+type IUploadField = {
+    name?: string
+    action?: string
 }
 
-const UploadField = (props: Props) => {
+const UploadField = (props: IUploadField) => {
     const { name, action } = props
-    const Icon: React.FC = () => <UploadIcon />
     const args: UploadProps = {
         name: name,
         multiple: false,
@@ -39,22 +40,22 @@ const UploadField = (props: Props) => {
         },
     }
     return (
-        <div className="flex flex-col content-start gap-y-[8px]">
-            <Dragger {...args} className="bg-transparent">
-                <p className="ant-upload-drag-icon justify-center flex !mb-[7px]">
-                    <Icon />
-                </p>
-                <p className="ant-upload-text !text-[12px] font-inter !text-color-grey600 leading-[15px] h-fit !mb-0 ">
+        <Flex vertical align="flex-start" gap={8} className="max-w-[600px]">
+            <Dragger {...args} className="bg-transparent w-full">
+                <Paragraph className="ant-upload-drag-icon justify-center flex !mb-[7px]">
+                    <UploadIcon />
+                </Paragraph>
+                <Paragraph className="ant-upload-text !text-[12px] font-inter !text-grey600 leading-[15px] h-fit !mb-0">
                     Перенесите файл сюда или
-                </p>
-                <p className="ant-upload-text !text-[12px] font-inter !text-color-halfaccent leading-[15px] h-fit !mb-0 ">
+                </Paragraph>
+                <Paragraph className="ant-upload-text !text-[12px] font-inter !text-halfaccent leading-[15px] h-fit !mb-0">
                     Откройте проводник
-                </p>
+                </Paragraph>
             </Dragger>
-            <p className="ant-upload-hint !text-[10px] font-inter !text-color-grey500 leading-[12px] h-fit">
+            <p className="ant-upload-hint !text-[10px] font-inter !text-grey500 leading-[12px] h-fit">
                 Прикрепите файл в формате .pdf
             </p>
-        </div>
+        </Flex>
     )
 }
 

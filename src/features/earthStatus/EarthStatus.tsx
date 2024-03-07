@@ -1,50 +1,57 @@
 import Flex from '@/shared/ui/Flex/Flex'
+import Paragraph from '@/shared/ui/Paragraph/Paragraph'
 import Progress from '@/shared/ui/Progress/Progress'
+import Title from '@/shared/ui/Title/Title'
 
-interface ProgressItem {
+interface IEarthProgress {
     title: string
     value: string
     color: string
     percent: number
 }
 
-interface Props {
-    items: ProgressItem[]
+interface IEarthStatus {
+    items: IEarthProgress[]
 }
 
-const EarthProgress = (props: ProgressItem) => {
+const EarthProgress = (props: IEarthProgress) => {
     const { title, value, color } = props
+    console.log(color)
     return (
-        <div className="flex items-center justify-between">
-            <div className="flex items-center">
+        <Flex align="center" justify="space-between">
+            <Flex>
                 <div
-                    className="w-2 h-2 rounded-full } mr-2 mt-0.5"
+                    className="w-2 h-2 rounded-full !font-inter mr-2 mt-[3px]"
                     style={{ backgroundColor: color }}
                 />
-                <p className="text-s7 font-medium text-color-grey800 leading-[14px] h-[15px]">
+                <Paragraph className="!text-s7 !font-medium !text-grey800 !leading-[14px] !h-[15px] !m-0 !font-inter">
                     {title}
-                </p>
-            </div>
-            <p className="text-s7 font-medium text-color-grey500">{value}</p>
-        </div>
+                </Paragraph>
+            </Flex>
+            <Paragraph className="!font-inter !text-s7 text-grey500 !m-0">
+                {value}
+            </Paragraph>
+        </Flex>
     )
 }
 
-const EarthStatus = (props: Props) => {
+const EarthStatus = (props: IEarthStatus) => {
     const { items } = props
     return (
-        <Flex
-            gap={24}
-            vertical
-            className="rounded-2xl p-6 font-inter shadow-sm w-[626px]"
-        >
+        <Flex gap={24} vertical className="rounded-2xl p-6 shadow-sm w-[626px]">
             <div>
-                <h5 className="text-s5 font-bold mb-2">Состояние земли</h5>
-                <p className="text-color-grey500 text-s6">
+                <Title
+                    colorText="#2D3748"
+                    level={4}
+                    className="!mb-2 !font-bold "
+                >
+                    Состояние земли
+                </Title>
+                <Paragraph className="text-grey500 !text-s6 !font-medium !m-0 ">
                     По агрофизическим показателям
-                </p>
+                </Paragraph>
             </div>
-            <div className="font-inter">
+            <div>
                 {items.map((item, index) => (
                     <div key={index}>
                         <EarthProgress {...item} />

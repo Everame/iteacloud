@@ -1,8 +1,14 @@
-type Theme = 'gray' | 'green'
+import Paragraph from '@/shared/ui/Paragraph/Paragraph'
+import Title from '@/shared/ui/Title/Title'
+
+export enum ETheme {
+    'GRAY' = 'gray',
+    'GREEN' = 'green',
+}
 
 interface Props {
     title: string
-    theme: Theme
+    theme: ETheme
     percent: number
 }
 
@@ -12,8 +18,8 @@ const borderColors = {
 }
 
 const textColors = {
-    gray: 'text-color-grey800',
-    green: 'text-color-success',
+    gray: '#2D3748',
+    green: '#66CB9F',
 }
 
 const ProductivityCard = (props: Props) => {
@@ -24,19 +30,26 @@ const ProductivityCard = (props: Props) => {
 
     return (
         <div
-            className="p-8 w-[344px] shadow-sm rounded-2xl font-inter"
+            className="p-8 w-[344px] shadow-sm rounded-2xl !font-inter"
             style={{ border: `1px solid ${borderColorCls}` }}
         >
-            <h3 className=" font-bold text-s3 text-color-grey800 mb-4">
+            <Title
+                colorText="#2D3748"
+                level={3}
+                className="!font-bold !mb-4 !font-inter"
+            >
                 {title}
-            </h3>
-            <h1 className={` ${textColorCls}  font-bold text-s1`}>
+            </Title>
+            <Title
+                colorText={textColorCls}
+                className="!font-bold !text-s1 !font-inter"
+            >
                 {percent}%
-            </h1>
-            <div className="w-[280px] h-[1px] bg-color-border my-4" />
-            <p className="text-color-grey600 text-s4">
+            </Title>
+            <div className="w-[280px] h-[1px] bg-border my-4" />
+            <Paragraph className="text-grey600 !text-s4 !m-0">
                 с учетом площади посева
-            </p>
+            </Paragraph>
         </div>
     )
 }

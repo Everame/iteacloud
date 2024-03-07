@@ -10,7 +10,7 @@ const Template: StoryFn = (args: any) => <Paragraph {...args} />
 
 export const Default = Template.bind({})
 Default.args = {
-    children: <div>example</div>,
+    children: 'example',
     className:
         'text-color-info text-[16px] leading-[19px] font-inter font-normal max-w-[600px] !mb-2',
 }

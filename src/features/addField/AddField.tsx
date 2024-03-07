@@ -1,18 +1,20 @@
-type Props = {
-    click: () => void
+import Paragraph from '@/shared/ui/Paragraph/Paragraph'
+
+interface IAddField {
+    onClick: () => void
 }
 
-const AddField = (props: Props) => {
-    const { click } = props
+const AddField = (props: IAddField) => {
+    const { onClick } = props
 
     return (
         <div
-            onClick={click}
-            className="w-[340px] h-[433px] custom-background relative cursor-pointer hover:shadow-md"
+            onClick={onClick}
+            className="w-[340px] h-[433px] custom-fieled-background relative cursor-pointer hover:shadow-md"
         >
-            <p className="absolute top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2 font-inter font-medium text-s3 text-color-accent w-[178px]">
+            <Paragraph className="absolute top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2 !font-inter !font-medium !text-s3 text-accent w-[178px]">
                 Добавить поле
-            </p>
+            </Paragraph>
         </div>
     )
 }

@@ -1,18 +1,24 @@
-type Props = {
-    status: string
-    className: string
+import { cn } from '@/shared/lib/Cn/Cn'
+import Text from '@/shared/ui/Text/Text'
+
+type IStatusField = {
+    status?: string
+    className?: string
 }
 
-const StatusField = (props: Props) => {
+const StatusField = (props: IStatusField) => {
     const { status, className } = props
 
     return (
         <div className="w-[200px] px-[22px] py-4">
-            <span
-                className={`font-inter font-medium text-s6 text-white ${className} px-3 py-1 rounded`}
+            <Text
+                className={cn(
+                    `font-inter font-medium text-s6 text-white px-3 py-1 rounded`,
+                    className
+                )}
             >
                 {status}
-            </span>
+            </Text>
         </div>
     )
 }

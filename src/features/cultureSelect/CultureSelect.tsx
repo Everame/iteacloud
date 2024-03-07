@@ -3,7 +3,7 @@ import Paragraph from '@/shared/ui/Paragraph/Paragraph'
 import Select from '@/shared/ui/Select/Select'
 
 interface Props {
-    icon: React.FunctionComponent
+    icon: React.ElementType
 }
 
 const CultureSelect = (props: Props) => {
@@ -12,11 +12,11 @@ const CultureSelect = (props: Props) => {
     const Icon: React.FC = () => <Element />
     return (
         <Flex vertical>
-            <Paragraph className="text-color-info text-[16px] leading-[19px] font-inter font-normal max-w-[600px] mb-2">
+            <Paragraph className="text-info text-[16px] leading-[19px] font-inter font-normal max-w-[600px] mb-2">
                 Культура для высадки
             </Paragraph>
             <Select
-                className="font-inter border-color-border border rounded-[8px] text-color-grey800 leading-[19px] max-w-[600px] h-12 font-normal"
+                className="font-inter border-border border rounded-[8px] text-grey800 leading-[19px] max-w-[600px] h-12 font-normal"
                 defaultValue="Любая"
                 suffixIcon=<Icon />
                 options={[

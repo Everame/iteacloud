@@ -2,12 +2,12 @@ import Flex from '@/shared/ui/Flex/Flex'
 import Text from '@/shared/ui/Text/Text'
 import Title from '@/shared/ui/Title/Title'
 
-type Props = {
-    title: string
-    value: string
+type IStatField = {
+    title?: string
+    value?: string
 }
 
-const StatField = (props: Props) => {
+const StatField = (props: IStatField) => {
     const { title, value } = props
     return (
         <Flex
@@ -15,13 +15,10 @@ const StatField = (props: Props) => {
             gap={8}
             className="p-[24px] rounded-[16px] shadow-sm w-fit"
         >
-            <Title
-                level={4}
-                className="text-color-grey800 font-inter font-bold text-s4"
-            >
+            <Title colorText="#2D3748" level={4}>
                 {title}
             </Title>
-            <Text className="text-color-grey600 font-medium font-inter text-[18px]">
+            <Text className="text-grey600 !font-medium font-inter !text-s4">
                 {value}
             </Text>
         </Flex>

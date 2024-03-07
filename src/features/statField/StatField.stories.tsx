@@ -9,6 +9,6 @@ export default {
 const Template: StoryFn = (args: any) => <StatField {...args} />
 export const Default = Template.bind({})
 Default.args = {
-    title: 'Площадь (га)',
+    title: 'Площадь (кв.м)',
     value: '600',
 }

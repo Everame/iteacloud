@@ -3,12 +3,12 @@ import Input from '@/shared/ui/Input/Input'
 import Paragraph from '@/shared/ui/Paragraph/Paragraph'
 import { ChangeEvent, useState } from 'react'
 
-type Props = {
-    title: string
-    placeholder: string
+type ITextField = {
+    title?: string
+    placeholder?: string
 }
 
-export const TextField = (props: Props) => {
+export const TextField = (props: ITextField) => {
     const { title, placeholder } = props
     const [value, setValue] = useState('')
 
@@ -19,14 +19,14 @@ export const TextField = (props: Props) => {
     return (
         <Flex vertical>
             <div>
-                <Paragraph className="text-color-info text-[16px] leading-[19px] font-inter font-normal max-w-[600px] !mb-2">
+                <Paragraph className="text-info !text-s5 leading-[19px] font-inter font-normal max-w-[600px] !mb-2">
                     {title}
                 </Paragraph>
                 <Input
                     placeholder={placeholder}
                     onChange={handleValueChange}
                     value={value}
-                    className="font-inter py-[14px] px-[18px] border-color-border border rounded-[8px] text-color-grey800 leading-[19px] h-12 max-w-[600px] font-normal"
+                    className="font-inter py-[14px] px-[18px] border-border border rounded-[8px] text-grey800 leading-[19px] h-12 max-w-[600px] font-normal"
                 />
             </div>
         </Flex>
