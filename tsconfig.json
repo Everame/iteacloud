@@ -7,7 +7,7 @@
         "skipLibCheck": true,
         "allowJs": true,
         "baseUrl": ".",
-        "typeRoots": ["./src/vite-env.d.ts", "./node_modules/@types"],
+        "typeRoots": ["src/app/types/vite-env.d.ts", "./node_modules/@types"],
         "paths": {
             "@/*": ["src/*"],
             "#/*": ["public/*"]
