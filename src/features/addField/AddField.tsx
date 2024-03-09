@@ -10,7 +10,7 @@ const AddField = (props: IAddField) => {
     return (
         <div
             onClick={onClick}
-            className="w-[340px] h-[433px] custom-fieled-background relative cursor-pointer hover:shadow-md"
+            className="w-[340px] h-[433px] custom-field-border relative cursor-pointer hover:shadow-md"
         >
             <Paragraph className="absolute top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2 !font-inter !font-medium !text-s3 text-accent w-[178px]">
                 Добавить поле

@@ -6,7 +6,7 @@ export enum ETheme {
     'GREEN' = 'green',
 }
 
-interface Props {
+interface IProductivityCard {
     title: string
     theme: ETheme
     percent: number
@@ -22,7 +22,7 @@ const textColors = {
     green: '#66CB9F',
 }
 
-const ProductivityCard = (props: Props) => {
+const ProductivityCard = (props: IProductivityCard) => {
     const { theme, percent, title } = props
 
     const borderColorCls = borderColors[theme]

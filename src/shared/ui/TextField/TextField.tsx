@@ -3,7 +3,7 @@ import Input from '@/shared/ui/Input/Input'
 import Paragraph from '@/shared/ui/Paragraph/Paragraph'
 import { ChangeEvent, useState } from 'react'
 
-type ITextField = {
+interface ITextField {
     title?: string
     placeholder?: string
 }
@@ -19,9 +19,11 @@ export const TextField = (props: ITextField) => {
     return (
         <Flex vertical>
             <div>
-                <Paragraph className="text-info !text-s5 leading-[19px] font-inter font-normal max-w-[600px] !mb-2">
-                    {title}
-                </Paragraph>
+                {title && (
+                    <Paragraph className="text-info !text-s5 leading-[19px] font-inter font-normal max-w-[600px] !mb-2">
+                        {title}
+                    </Paragraph>
+                )}
                 <Input
                     placeholder={placeholder}
                     onChange={handleValueChange}

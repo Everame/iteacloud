@@ -1,4 +1,3 @@
-import { cn } from '@/shared/lib/Cn/Cn'
 import { ConfigProvider, Typography } from 'antd'
 import { TitleProps } from 'antd/es/typography/Title'
 import { FC } from 'react'
@@ -32,7 +31,7 @@ const Title: FC<ITitleProps> = ({ colorText, className, ...props }) => {
                 },
             }}
         >
-            <AntdTitle {...props} className={cn(className)} />
+            <AntdTitle {...props} className={className} />
         </ConfigProvider>
     )
 }

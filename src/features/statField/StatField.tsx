@@ -1,8 +1,9 @@
+import { ESpasing } from '@/shared/ui/Enums/Enums'
 import Flex from '@/shared/ui/Flex/Flex'
 import Text from '@/shared/ui/Text/Text'
 import Title from '@/shared/ui/Title/Title'
 
-type IStatField = {
+interface IStatField {
     title?: string
     value?: string
 }
@@ -12,7 +13,7 @@ const StatField = (props: IStatField) => {
     return (
         <Flex
             vertical
-            gap={8}
+            gap={ESpasing.GAP2}
             className="p-[24px] rounded-[16px] shadow-sm w-fit"
         >
             <Title colorText="#2D3748" level={4}>

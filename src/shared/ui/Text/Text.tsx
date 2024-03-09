@@ -1,4 +1,3 @@
-import { cn } from '@/shared/lib/Cn/Cn'
 import { ConfigProvider, Typography } from 'antd'
 import { TextProps } from 'antd/es/typography/Text'
 import { FC } from 'react'
@@ -18,7 +17,7 @@ const Text: FC<TextProps> = ({ className, ...props }) => {
                 },
             }}
         >
-            <AntdText {...props} className={cn(className)} />
+            <AntdText {...props} className={className} />
         </ConfigProvider>
     )
 }

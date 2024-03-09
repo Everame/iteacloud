@@ -1,22 +1,23 @@
+import { ESpasing } from '@/shared/ui/Enums/Enums'
 import Flex from '@/shared/ui/Flex/Flex'
 import Paragraph from '@/shared/ui/Paragraph/Paragraph'
 import Progress from '@/shared/ui/Progress/Progress'
 import Title from '@/shared/ui/Title/Title'
 
-interface Props {
+interface ISoilProgress {
     percent: number
 }
 
-const SoilProgress = (props: Props) => {
+const SoilProgress = (props: ISoilProgress) => {
     const { percent } = props
 
     return (
         <Flex
             vertical
-            gap={32}
+            gap={ESpasing.GAP8}
             className="p-6 !pb-[55px] shadow-sm rounded-2xl w-[345px]"
         >
-            <Flex vertical gap={8} className="!font-inter">
+            <Flex vertical gap={ESpasing.GAP2} className="!font-inter">
                 <Title
                     colorText="#2D3748"
                     level={5}

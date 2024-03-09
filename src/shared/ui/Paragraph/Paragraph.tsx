@@ -1,4 +1,3 @@
-import { cn } from '@/shared/lib/Cn/Cn'
 import { ConfigProvider, Typography } from 'antd'
 import { ParagraphProps } from 'antd/es/typography/Paragraph'
 import { FC } from 'react'
@@ -21,7 +20,7 @@ const Paragraph: FC<ParagraphProps & React.RefAttributes<HTMLElement>> = ({
                 },
             }}
         >
-            <AntParagraph {...props} className={cn(className)} />
+            <AntParagraph {...props} className={className} />
         </ConfigProvider>
     )
 }

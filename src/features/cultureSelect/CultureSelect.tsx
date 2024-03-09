@@ -2,11 +2,11 @@ import Flex from '@/shared/ui/Flex/Flex'
 import Paragraph from '@/shared/ui/Paragraph/Paragraph'
 import Select from '@/shared/ui/Select/Select'
 
-interface Props {
+interface ICultureSelect {
     icon: React.ElementType
 }
 
-const CultureSelect = (props: Props) => {
+const CultureSelect = (props: ICultureSelect) => {
     const { icon } = props
     const Element = icon
     const Icon: React.FC = () => <Element />

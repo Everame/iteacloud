@@ -1,12 +1,12 @@
 import UploadIcon from '#/icons/upload.svg?react'
 import { Message } from '@/shared/lib/Message/Message'
 import Dragger from '@/shared/ui/Dragger/Dragger'
+import { ESpasing } from '@/shared/ui/Enums/Enums'
 import Flex from '@/shared/ui/Flex/Flex'
 import Paragraph from '@/shared/ui/Paragraph/Paragraph'
-
 import { UploadProps } from 'antd'
 
-type IUploadField = {
+interface IUploadField {
     name?: string
     action?: string
 }
@@ -40,7 +40,12 @@ const UploadField = (props: IUploadField) => {
         },
     }
     return (
-        <Flex vertical align="flex-start" gap={8} className="max-w-[600px]">
+        <Flex
+            vertical
+            align="flex-start"
+            gap={ESpasing.GAP2}
+            className="max-w-[600px]"
+        >
             <Dragger {...args} className="bg-transparent w-full">
                 <Paragraph className="ant-upload-drag-icon justify-center flex !mb-[7px]">
                     <UploadIcon />

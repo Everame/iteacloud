@@ -2,7 +2,7 @@ import { Meta, StoryFn } from '@storybook/react'
 import { TextField } from './TextField'
 
 export default {
-    title: 'features/TextField',
+    title: 'shared/TextField',
     component: TextField,
 } as Meta
 

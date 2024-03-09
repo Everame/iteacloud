@@ -1,7 +1,7 @@
-import { cn } from '@/shared/lib/Cn/Cn'
+import { cn } from '@/shared/lib/ClassNames/ClassNames'
 import Text from '@/shared/ui/Text/Text'
 
-type IStatusField = {
+interface IStatusField {
     status?: string
     className?: string
 }
