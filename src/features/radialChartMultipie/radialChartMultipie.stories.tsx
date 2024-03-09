@@ -2,7 +2,7 @@ import { Meta, StoryFn } from '@storybook/react'
 import RadialChartMultipie from './radialChartMultipie'
 
 export default {
-    title: 'Charts',
+    title: 'features/Charts',
     component: RadialChartMultipie,
 } as Meta
 

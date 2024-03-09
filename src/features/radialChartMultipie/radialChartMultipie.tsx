@@ -1,4 +1,5 @@
-import { Flex, Progress } from 'antd'
+import Flex from '@/shared/ui/Flex/Flex'
+import Progress from '@/shared/ui/Progress/Progress'
 
 interface IData {
     name: string
