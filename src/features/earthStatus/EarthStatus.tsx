@@ -1,4 +1,4 @@
-import { ESpasing } from '@/shared/ui/Enums/Enums'
+import { ESpacing } from '@/shared/ui/Enums/Enums'
 import Flex from '@/shared/ui/Flex/Flex'
 import Paragraph from '@/shared/ui/Paragraph/Paragraph'
 import Progress from '@/shared/ui/Progress/Progress'
@@ -38,7 +38,7 @@ const EarthStatus = (props: IEarthStatus) => {
     const { items } = props
     return (
         <Flex
-            gap={ESpasing.GAP6}
+            gap={ESpacing.VALUE6}
             vertical
             className="rounded-2xl p-6 shadow-sm w-[626px]"
         >

@@ -1,7 +1,7 @@
 import UploadIcon from '#/icons/upload.svg?react'
 import { Message } from '@/shared/lib/Message/Message'
 import Dragger from '@/shared/ui/Dragger/Dragger'
-import { ESpasing } from '@/shared/ui/Enums/Enums'
+import { ESpacing } from '@/shared/ui/Enums/Enums'
 import Flex from '@/shared/ui/Flex/Flex'
 import Paragraph from '@/shared/ui/Paragraph/Paragraph'
 import { UploadProps } from 'antd'
@@ -43,7 +43,7 @@ const UploadField = (props: IUploadField) => {
         <Flex
             vertical
             align="flex-start"
-            gap={ESpasing.GAP2}
+            gap={ESpacing.VALUE2}
             className="max-w-[600px]"
         >
             <Dragger {...args} className="bg-transparent w-full">
